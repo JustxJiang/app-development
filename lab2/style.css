@@ -43,7 +43,6 @@ img{
     display: flex;
 }
 .header-container > div{
-    border: solid red 1px; 
     padding: 20px;
 }
 
