@@ -1,0 +1,51 @@
+.number-header{
+    margin-top: 5em;
+    font-family: Stencil Std, fantasy;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.grid-numbers{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-around;
+}
+
+.number-card{
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+.number-card:hover{
+    box-shadow: 1px 1px 3px gray;
+    cursor: pointer;
+}
+
+.modal-header{
+    display: flex;
+}
+
+.modalcontent img{
+    display: block;
+    width: 100%;
+}
+.modalwindow{
+    background-color: rgba(52, 29, 61, 0.7);
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    display: none;
+}
+.modalcontent{
+    width: 60%; 
+    padding: 20px;
+    margin: 10% auto;
+    background-color: #f6db35;
+    display: block; 
+}
+.closemodal:hover{
+    cursor: pointer;
+}

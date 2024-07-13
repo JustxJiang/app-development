@@ -1,0 +1,105 @@
+*{box-sizing: border-box;}
+.body{
+    margin-top: 30px;
+    background-color: #f6db35;
+}
+
+/* HEADER */
+.header{
+    background-color: rgb(255, 197, 16);
+    width: 100%;
+    margin:none;
+    display: block;
+}
+.bubble{
+    height: 50vh;
+    margin: auto;
+    display: block;
+    width: 60vh;
+}
+
+.title{
+    position: absolute;
+    top: 26%;
+    left: 40%;
+    font-size: 32px;
+    font-family: Stencil Std, fantasy;
+}
+
+.header-container, .navMenu{
+    background-color: rgb(238, 84, 84);
+    display: flex;
+    width: 100%;
+    font-family: Stencil Std;
+}
+.header-container > div, .navMenu > div{
+    padding: 30px;
+    font-weight: bold;
+}
+.header-container > div > a, .navMenu > div > a{
+    text-decoration: none;
+    color: black;
+}
+
+.header-container > div > a:hover, .navMenu > div > a:hover{
+    border-bottom: white 1px ridge;
+}
+
+
+.header-container > div:nth-child(2){
+    margin-left: auto;
+}
+
+.headerNav{
+    position: fixed;
+    top:0%;
+    left:0%;
+    right: 0%;
+}
+
+/* CARDS */
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 1200px;
+    justify-content: space-around;
+    margin: 30px auto;
+}
+
+.card{
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px gray;
+    overflow: hidden;
+    text-align: center;
+    display: relative;
+    margin: 30px;
+}
+
+.card:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+}
+
+.numbers, .addition{
+    font-family: Stencil Std, fantasy;
+    font-size: 20px;
+    position: absolute;
+    bottom: 2%;
+    left: 16%;
+    opacity: 0;
+    transition: ease-in-out 275ms;
+}
+
+.card:hover{
+    h2{
+        opacity: 1;
+    }
+    img{
+        opacity: 0.2;
+    }
+    background-color: #ffc510;
+}
