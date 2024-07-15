@@ -63,7 +63,7 @@ let closeButtons = document.querySelectorAll(".closemodal")
 // close the modal window by clicking on X 
 closeButtons.forEach(function(closeButton){
     closeButton.addEventListener("click", function(closeButton){
-        let modal = this.closest(".modal")
+        let modal = this.closest(".modalwindow")
 
         if(modal){
             modal.style.display = "none"
