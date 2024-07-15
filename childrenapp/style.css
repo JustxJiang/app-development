@@ -62,7 +62,7 @@
 .grid-container{
     display: grid;
     grid-template-columns: auto auto;
-    width: 80%;
+    width: 50%;
     justify-content: space-around;
     margin: 30px auto;
 }
