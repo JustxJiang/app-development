@@ -21,12 +21,13 @@
 .title{
     position: absolute;
     top: 26%;
-    left: 40%;
+    left: 40.5%;
     font-size: 32px;
     font-family: Stencil Std, fantasy;
+    text-shadow: 0 3px rgb(238, 84, 84);
 }
 
-.header-container, .navMenu{
+.header-container, .navMenu, .footer{
     background-color: rgb(238, 84, 84);
     display: flex;
     width: 100%;
@@ -61,7 +62,7 @@
 .grid-container{
     display: grid;
     grid-template-columns: auto auto;
-    width: 1200px;
+    width: 80%;
     justify-content: space-around;
     margin: 30px auto;
 }
@@ -84,22 +85,114 @@
     height: 100%;
 }
 
-.numbers, .addition{
-    font-family: Stencil Std, fantasy;
-    font-size: 20px;
-    position: absolute;
-    bottom: 2%;
-    left: 16%;
-    opacity: 0;
-    transition: ease-in-out 275ms;
-}
-
 .card:hover{
-    h2{
-        opacity: 1;
-    }
     img{
-        opacity: 0.2;
+        opacity: 0.35;
     }
     background-color: #ffc510;
+}
+
+
+.color-header, .number-header{
+    margin-top: 5em;
+    font-family: Stencil Std, fantasy;
+    text-align: center;
+    font-weight: lighter;
+}
+
+
+
+
+
+/** MODAL WINDOW */
+.modal-header{
+    display: flex;
+}
+
+.modalcontent img{
+    display: block;
+    width: 100%;
+}
+.one-modal, .two-modal, .three-modal, .four-modal, .five-modal, .six-modal, .seven-modal, .eight-modal, .nine-modal, .ten-modal{
+    background-color: rgba(52, 29, 61, 0.7);
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    display: none;
+}
+.modalcontent{
+    width: 60%; 
+    padding: 20px;
+    margin: 10% auto;
+    background-color: #f6db35;
+    display: block; 
+}
+.closemodal:hover{
+    cursor: pointer;
+}
+
+/** FOOTER */
+.footer{
+    padding: 20px;
+}
+
+.footer h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.column{
+    width: 33%;
+    text-align: center;
+}
+
+.icon{
+    width: 50px;
+    padding: 5px;
+    display: inline;
+    opacity: 0.8;
+}
+
+.icon:hover{
+    opacity: 1;
+}
+
+.contact{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline;
+}
+
+/*---- MEDIA QUERY ----*/
+@media screen and (max-width: 1200px){
+
+    .title{
+        top: 0%;
+        left: 0%;
+        position: relative;
+    }
+
+}
+@media screen and (max-width: 900px){
+    .grid-container{
+        grid-template-columns: auto;
+        width: 100%;
+    }
+    .bubble{
+        display: none;
+    }
+    .title{
+        position: relative;
+        display: grid;
+        grid-template-columns: auto;
+        margin: auto;
+        margin-top: 3.5em;
+        top: 0%;
+        left: 0%;
+        text-align: center;
+    }
+
 }
