@@ -18,7 +18,7 @@ const server = http.createServer(function(request, response){
 
     }
 })
-/*const server = http.createServer(function(response, request){
+/*const server = http.createServer(function(request, response){
     // send the response 
     response.writeHead(200,{'Content-Type': 'text/html'})
     fs.createReadStream(__dirname + '/index.html').pipe(response)
