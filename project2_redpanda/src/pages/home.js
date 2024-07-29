@@ -1,5 +1,6 @@
 import React from 'react';
 import cover from '../images/redpandacover.jpg'
+import Card from '../card'
 
 const Home = function(){
     return(
@@ -9,6 +10,9 @@ const Home = function(){
 
         {/* cards */}
         <section className='cardcontainer'>
+          <Card title = "Origin"/>
+          <Card title = "Fun Facts"/>
+          <Card title = "Current Status"/>
 
         </section>
       </>
