@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(20, 20, 20);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+img{
+  width: 100%;
+  display: block;
+}
+
+.title{
+  text-align: center;
+  color: darkorange;
+  font-weight: bold;
+}
+.logo{
+  width: 200px;
+}
+
+/*NAVBAR*/
+.navbar{
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+.navbar div:nth-child(2){
+  margin-left: auto;
+}
+.btngroup button{
+  padding: 0px 20px;
+  border: none;
+  background-color: rgb(20, 20, 20);
+}
+.btngroup button:hover{
+  font-weight: bolder;
+}
+.btngroup p{
+  color: darkorange;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/*CARD*/
+/* card */
+.cardcontainer{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card{
+  width: 300px;
+  border: solid gray 2px;
+  border-radius: 12px;
+  margin: 15px;
+  text-align: center;
+  transition: ease-in-out 100ms;
+}
