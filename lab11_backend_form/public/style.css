@@ -1,0 +1,36 @@
+*{box-sizing: border-box;}
+body{
+    background-color: rgb(41, 30, 139);
+    color: white;
+}
+.login{
+    width: 500px;
+    padding: 20px; 
+    background-color: white;
+    color: rgb(41, 30, 139);
+}
+.formcontrol{
+    margin-top: 20px; 
+}
+
+.myform fieldset legend{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.formcontrol input[type = "submit"]{
+    width:100%;
+    padding: 15px;
+    color: white;
+    background-color: rgb(41, 30, 139);
+    transition: ease-in-out 200ms;
+    border: none;
+    cursor: pointer;
+}
+.formcontrol input[type="submit"]:hover{
+    background-color: crimson;
+    font-weight: bolder;
+    box-shadow: 0px 0px 2px 1px gray;
+    border-radius: 10px;
+}
